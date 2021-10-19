@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*
+    – abstracts/
+|   |– _variables.scss    # Sass Variables
+|   |– _functions.scss    # Sass Functions
+|   |– _mixins.scss       # Sass Mixins
+|   |– _placeholders.scss # Sass Placeholders
+*/
+/*
+    ATTENTION A BIEN REMPLIR OU COMMENTER CHAQUE LIGNE
+*/
+/*
+$font-family-title: ;
+$font-family-label: ;
+$font-family-namesite: ;
+$font-family-quotes: ;
+*/
+/*
+    Ici, nous n'avons pas de dossier "vendors".
+    En effet, nous utilisons NPM, afin de gérer nos dépendances.
+   
+        /*
+        abstracts/
+        vendors/
+        base/
+        layout/
+        components/
+        pages/
+        themes/
+
+        
+        
+        https://sass-guidelin.es/fr/
+        
+        */
+/*
+
+base/
+ _reset.scss        # Reset/normalize
+ _typography.scss   # Typography rules
+                    # Etc.
+*/
+/*
+    ATTENTION A BIEN REMPLIR OU COMMENTER CHAQUE LIGNE
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/*
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+*/
+body {
+  font-family: "Lato", serif, sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  border: 1.5rem solid #F6F7F9;
+  background-color: #F6F7F9;
+  padding: 2.5rem 2rem 1.5rem 3rem; }
+
+body,
+input {
+  font-family: "Montserrat", sans-serif, "Helvetica", Arial, sans-serif; }
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #1c1d1f;
+  cursor: pointer; }
+
+header {
+  font-size: 3rem; }
+
+.containers {
+  background-color: #1e4fd6;
+  height: 50rem;
+  width: 50rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto; }
+
+.button {
+  background-color: #FFEC00;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem; }
+
+h1 {
+  font-size: 3rem;
+  color: #1e4fd6;
+  text-align: center; }
+
+.button {
+  background-color: #1e4fd6;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+.colone {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  justify-content: space-around; }
+
+.case {
+  height: 6rem;
+  width: 6rem;
+  background-color: #F6F7F9;
+  border: 1px solid #F6F7F9;
+  border-radius: 10rem;
+  margin: 0.2rem; }
